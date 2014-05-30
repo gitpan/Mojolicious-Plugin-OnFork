@@ -6,7 +6,7 @@ use File::Spec::Functions qw(catdir catfile);
 use File::Temp 'tempdir';
 use FindBin;
 use IO::Socket::INET;
-use Mojo::IOLoop;
+use Mojo::IOLoop::Server;
 use Mojo::UserAgent;
 use Mojo::Util 'spurt';
 
@@ -33,8 +33,8 @@ plan skip_all => 'hypnotoad script not found - skipping this test'
 # Prepare script
 my $dir = tempdir CLEANUP => 1;
 my $script = catdir $dir, 'myapp.pl';
-my $port1  = Mojo::IOLoop->generate_port;
-my $port2  = Mojo::IOLoop->generate_port;
+my $port1  = Mojo::IOLoop::Server->generate_port;
+my $port2  = Mojo::IOLoop::Server->generate_port;
 
 spurt <<EOF, $script;
 use Mojolicious::Lite;

@@ -2,7 +2,7 @@ NAME
     Mojolicious::Plugin::OnFork - Do Something Whenever a Worker Starts
 
 VERSION
-    Version 0.001
+    Version 0.002
 
 SYNOPSIS
       # Mojolicious
@@ -41,7 +41,7 @@ AUTHOR
     Bernhard Graf <graf(a)cpan.org>
 
 COPYRIGHT AND LICENSE
-    Copyright (C) 2012 Bernhard Graf
+    Copyright (C) 2012 - 2014 Bernhard Graf
 
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.

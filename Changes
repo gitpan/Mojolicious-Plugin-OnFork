@@ -1,5 +1,8 @@
 Revision history for Mojolicious-Plugin-AccessLog
 
+0.002   2014-05-31
+        Fix test for Mojolicious 5.0.
+
 0.001   2012-10-17
         First version, released on an unsuspecting world.
 

@@ -9,7 +9,7 @@ repository      'git://github.com/augensalat/mojolicious-plugin-onfork.git';
 build_requires  'Test::More';
 build_requires  'Test::Mojo';
 
-requires        'Mojolicious' => '2.0';
+requires        'Mojolicious' => '3.09';
 requires        'Carp';
 
 auto_install;
